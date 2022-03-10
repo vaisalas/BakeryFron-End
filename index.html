@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+
+</head>
+
+<body style=background-color:skyblue;>
+    
+    <h1 header style="color:black;
+         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         text-align:center;
+         background-color:skyblue;
+         ">Cakes and Crumbs by TS
+    </h1>
+    
+         <section
+         id="CCTS">
+         </section>
+
+            <div>
+                <h4>Add a Bakery Product</h4>
+                <form>
+                    Name:<input type="text" id="bakeryName"><br><br>
+                    
+                    Dietary:<input type="text" id="dietary"><br><br>
+
+                    Product:<input type="text" id="product"><br><br>
+
+                    <input type ="button" id="create" value="Add" onclick="createBakery()">
+                
+                    <button type="reset" value="Reset" class="btn btn-secondary" id="clearFormBtn">Clear</button>
+                </form>
+            </div>
+
+            <div>
+                <h4>Edit a Bakery Product</h4>
+                <form>
+                    ID: <input type="text" id="editID"><br><br>
+
+                    Name:<input type="text" id="editName"><br><br>
+
+                    Dietary:<input type="text" id="editdietary"><br><br>
+
+                    Product:<input type="text" id="editproduct"><br><br>
+
+                    <input type ="button" value="Edit" onclick="editBakery()">
+                    <button type="reset" value="Reset" class="btn btn-secondary" id="clearFormBtn">Clear</button>
+                </form>
+            </div>
+            
+            <div>
+                <br>
+                <h4>Read Bakery Products</h4>
+                <form>
+                    <p>Currently our service only offers to see the full list of products. on our next update we are aiming to bring in the filter mode for our database</p>
+                    <p>Please click on the Read button to see the list</p>
+                     <input type="button" value="Read" onclick="Read()">
+                 </form>              
+            </div>
+
+            <div>
+                <br>
+                <h4>Delete a Bakery Product</h4>
+                <form>
+                    ID:
+                     <input type="text" name="deleteByID" id="deleteByID"><br><br>
+                     <input type="button" value="Delete" onclick="DeletebyID()">
+                     <button type="button" class="btn btn-secondary" id="clearFilterBtn">Clear</button><br><br>
+                 </form>              
+            </div>
+
+            <h2>Bakery list:</h2>
+            <div id="getAllOutput" class="row row-cols-3">
+
+            </div>
+
+    <script type="text/javascript" src="script/index.js"></script>
+</body>
+
+</html>
